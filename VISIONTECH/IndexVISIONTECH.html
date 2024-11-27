@@ -61,36 +61,39 @@
     </nav>
 </header>
 
-<body>
-<br> 
 
- <!---Presentaciones-->
+<body>
+    <br>
+
+    <br>
+    <!---Presentaciones-->
     <div class="card-group">
         <div class="card">
-          <img src="..." class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
-          </div>
+            <img src="imagenes/hiro.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Alan Yair Garcia Garcia</h5>
+                <p class="card-text">Programador Back-end</p>
+                <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+            </div>
         </div>
         <div class="card">
-          <img src="..." class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-            <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
-          </div>
+            <img src="imagenes/denji.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Josué Antonio Lara Gutiérrez</h5>
+                <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+            </div>
         </div>
         <div class="card">
-          <img src="..." class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-            <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
-          </div>
+            <img src="imagenes/aki.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Manuel Agusto Rojas Mejía</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                    content. This card has even longer content than the first to show that equal height action.</p>
+                <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+            </div>
         </div>
-      </div>
+    </div>
 
 
 </body>
@@ -147,6 +150,31 @@
         overflow: hidden;
         /* Evita que el contenido se salga si usas bordes redondeados */
     }
+    .card{
+        background-size: cover;
+        /* Asegura que la imagen cubra el contenedor */
+        border-radius: 10px;
+        /* Opcional: bordes redondeados */
+        overflow: hidden;
+        /* Evita que el contenido se salga si usas bordes redondeados */
+
+    }
+    /* Imagenes de la presentación*/
+       .card-img-top {
+            width: 100%;
+            /* Asegura que la imagen se ajuste al ancho del contenedor */
+            height: 50%;
+            /* Ajusta la altura deseada */
+            object-fit: cover;
+            /* Escala y recorta la imagen para que se ajuste sin deformarse */
+            border-radius: 10px;
+            /* Opcional: bordes redondeados */
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            /* Opcional: sombra para estilo */
+            overflow: hidden;
+        /* Evita que el contenido se salga si usas bordes redondeados */
+
+        }
 
     .navbar-brand-imagen {
         background-size: cover;
@@ -254,4 +282,7 @@
         .footer .footer-section {
             margin-bottom: 20px;
         }
+
+     
+
     }
