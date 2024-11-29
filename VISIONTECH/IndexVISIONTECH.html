@@ -65,9 +65,43 @@
 <body>
     <br>
     <!--Mision vision objetivo empresa -->
-
+    <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalToggleLabel">MISIÓN</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                Ofrecer soluciones tecnológicas personalizadas y accesibles que mejoren la vida de nuestros clientes. Nuestra misión es destacar en el mercado mediante la innovación constante,
+                un servicio al cliente excepcional y un compromiso con la calidad en todas nuestras áreas de especialización.
+            </div>
+            <div class="modal-footer">
+              <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">VISION</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">VISION</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                Ser una empresa líder en soluciones tecnológicas innovadoras, proporcionando servicios de alta calidad en desarrollo de software, aplicaciones móviles y web, así como reparación de equipos e instalación de sistemas de seguridad,
+                contribuyendo al avance tecnológico de las comunidades a las que servimos.
+            </div>
+            <div class="modal-footer">
+              <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Back to first</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">MISIÓN</button>
     
-    <br>
+    <hr>
     <!---Presentaciones-->
     <div class="conteiner-card-presentacion">
         <div class="card-group">
@@ -156,8 +190,32 @@
         overflow: hidden;
         /* Evita que el contenido se salga si usas bordes redondeados */
     }
+/* Contenedor MisionVision */
+.container-presentacion-body {
+    padding: 20px; /* Espaciado dentro del contenedor */
+}
 
-    /* Contenedor principal */
+.scrollspy-example-2 {
+    max-height: 500px; /* Controla la altura del contenedor */
+    overflow-y: auto; /* Habilita scroll vertical si el contenido excede */
+    border: 1px solid #ddd; /* Opcional: Borde para diferenciar el contenido */
+    padding: 15px;
+    background-color: #f8f9fa; /* Fondo claro */
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+@media (max-width: 768px) {
+    #navbar-example3 {
+        border: none; /* Quita el borde en pantallas pequeñas */
+        padding: 10px;
+    }
+
+    .scrollspy-example-2 {
+        max-height: 300px; /* Reduce la altura en pantallas pequeñas */
+    }
+}
+
+    /* Contenedor precentaciones */
     .conteiner-card-presentacion {
         max-width: 1200px;
         /* Define el ancho máximo del contenedor */
